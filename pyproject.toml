@@ -1,17 +1,14 @@
 [project]
 name = "books-scraping"
 version = "0.1.0"
-description = "Add your description here"
+description = "Collect books from Books to Scrape and export them to CSV"
 readme = "README.md"
 authors = [
     { name = "Carlos Michelutti", email = "carlos.stz590@gmail.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
-
-[project.scripts]
-books-scraping = "books_scraping:main"
-
-[build-system]
-requires = ["uv_build>=0.12.17,<0.13.0"]
-build-backend = "uv_build"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "pandas>=3.1.0",
+    "requests>=2.34.2",
+]
